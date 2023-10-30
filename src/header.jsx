@@ -28,9 +28,9 @@ const Header = () => {
         <div>
             <header className="w-full bg-white fixed top-0 z-10 font-bold">
                 <nav>
-                    <div className="justify-between px-3 mx-auto lg:max-w-7xl md:items-center md:flex md:px-4 text-[#2F1A60] lg:text-base md:text-[11px]">
+                    <div className="justify-between lg:py-10 md:py-8 lg:px-16 md:px-8 py-3 px-5 mx-auto md:items-center md:flex text-[#2F1A60] lg:text-sm md:text-[10px]">
                         <div>
-                            <div className="flex items-center justify-between py-2 md:py-4 md:block">
+                            <div className="flex items-center justify-between md:block">
                                 <a href="#home" onClick={closeNavbar}>
                                     <NavLink to="/">
                                         <img
@@ -144,4 +144,3 @@ const Header = () => {
 };
 
 export default Header;
-
