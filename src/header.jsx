@@ -15,7 +15,7 @@ const Header = () => {
     };
 
     const navLinkStyles = ({ isActive }) => ({
-        textDecoration: isActive ? "underline" : "none"
+        textDecoration: isActive ? "underline" : "none",
     });
 
     const location = useLocation();
@@ -26,9 +26,9 @@ const Header = () => {
 
     return (
         <div>
-            <header className="w-full fixed top-0 z-10">
+            <header className="w-full bg-white fixed top-0 z-10 font-bold">
                 <nav>
-                    <div className="justify-between px-3 mx-auto lg:text-sm md:text-xs lg:max-w-6xl md:items-center md:flex font-semibold">
+                    <div className="justify-between px-3 mx-auto lg:max-w-7xl md:items-center md:flex md:px-4 text-[#2F1A60] lg:text-base md:text-[11px]">
                         <div>
                             <div className="flex items-center justify-between py-2 md:py-4 md:block">
                                 <a href="#home" onClick={closeNavbar}>
@@ -57,8 +57,8 @@ const Header = () => {
                                 className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbarOpen ? "block" : "hidden"
                                     }`}
                             >
-                                <ul className="items-center h-[100vh] md:h-full justify-center text-center space-y-8 md:flex md:space-x-5 md:space-y-0">
-                                    <li className="text-[#2F1A60]">
+                                <ul className="items-center h-[100vh] md:h-full justify-center text-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                                    <li className="">
                                         <NavLink
                                             style={navLinkStyles}
                                             onClick={closeNavbar}
@@ -68,7 +68,7 @@ const Header = () => {
                                             SERVICES
                                         </NavLink>
                                     </li>
-                                    <li className="text-[#2F1A60]">
+                                    <li className="">
                                         <NavLink
                                             style={navLinkStyles}
                                             onClick={closeNavbar}
@@ -78,7 +78,7 @@ const Header = () => {
                                             LANGUAGE
                                         </NavLink>
                                     </li>
-                                    <li className="text-[#2F1A60]">
+                                    <li className="">
                                         <NavLink
                                             style={navLinkStyles}
                                             onClick={closeNavbar}
@@ -88,7 +88,7 @@ const Header = () => {
                                             BOOK A LESSON
                                         </NavLink>
                                     </li>
-                                    <li className="text-[#2F1A60]">
+                                    <li className="">
                                         <NavLink
                                             style={navLinkStyles}
                                             onClick={closeNavbar}
@@ -98,7 +98,7 @@ const Header = () => {
                                             ABOUT
                                         </NavLink>
                                     </li>
-                                    <li className="text-[#2F1A60]">
+                                    <li className="">
                                         <NavLink
                                             style={navLinkStyles}
                                             onClick={closeNavbar}
@@ -111,7 +111,7 @@ const Header = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="md:block hidden gap-10 text-[#2F1A60]">
+                        <div className="md:block hidden gap-10 ">
                             <ul className="md:flex md:justify-between">
                                 <li className="py-2">
                                     <NavLink
@@ -144,3 +144,4 @@ const Header = () => {
 };
 
 export default Header;
+

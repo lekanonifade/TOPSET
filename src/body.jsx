@@ -7,11 +7,11 @@ export default function Body() {
         <div>
             <Routes>
                 <Route path="/" element={<Homepage />} />
-                {/* <Route path="/products" element={<Products />} />
-                <Route path="/company" element={<Company />} />
-                <Route path="/catalogue" element={<Catalogue />} />
-                <Route path="/recipes" element={<Recipes />} />
-                <Route path="/contact-us" element={<Contact />} /> */}
+                {/* <Route path="/services" element={} />
+                <Route path="/language" element={} />
+                <Route path="/book-a-lesson" element={} />
+                <Route path="/about" element={} />
+                <Route path="/contact" element={} /> */}
             </Routes>
         </div>
     )
