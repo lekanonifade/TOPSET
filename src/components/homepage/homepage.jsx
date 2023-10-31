@@ -1,12 +1,14 @@
 import React from "react";
 import FirstHomepage from "./1homepage/1homepage";
 import SecondHomepage from "./2homepage/2homepage";
+import ThirdHomepage from "./3homepage/3homepage";
 
 export default function Homepage() {
     return (
-        <div className="flex flex-col gap-20">
+        <div className="flex flex-col gap-20 lg:pt-28 md:pt-16 pt-10 pb-24">
             <FirstHomepage />
             <SecondHomepage />
+            <ThirdHomepage />
         </div>
     )
 }
