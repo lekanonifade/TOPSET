@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <div className="flex flex-row flex-wrap md:flex-nowrap p-5 md:p-10 gap-10 lg:py-10 lg:p-24 bg-white">
-            <p></p>
+        <div className="bg-[#957FBE80] h-32 p-10">
+            <p className="text-center font-bold text-white text-2xl">BACKED BY</p>
         </div>
     )
 }
