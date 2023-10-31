@@ -59,7 +59,7 @@ export default function SixthHomepage() {
                 <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl'>THE TOPSET TREATMENT</p>
                 <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl text-[#957FBE]'>Why We’re Different</p>
             </div>
-            <div className='flex flex-row gap-10'>
+            <div className='flex flex-row md:gap-10'>
                 <div className='flex flex-col gap-10 py-5 w-[30%]'>
                     <img src="../images/homepageTreatment/ellipse3.svg" alt="" className='rounded-full' />
                     <div className='text-center'>
