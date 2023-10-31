@@ -17,7 +17,7 @@ const eighthHomepageData = [
 
 function EighthHomepageProps({ image, note }) {
     return (
-        <div className='flex flex-col bg-white p-5'>
+        <div className='flex flex-col p-5'>
             <div className=''>
                 <img src={image} alt="" className='rounded-full' />
             </div>
@@ -33,7 +33,7 @@ function EighthHomepageProps({ image, note }) {
 
 export default function EighthHomepage() {
     const myEighthHomepage = eighthHomepageData.map((item, index) => (
-        <div key={index} className='w-1/4'>
+        <div key={item.note}>
             <EighthHomepageProps
                 image={item.image}
                 note={item.note}
