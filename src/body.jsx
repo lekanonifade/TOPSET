@@ -4,7 +4,7 @@ import Homepage from "./components/homepage/homepage";
 
 export default function Body() {
     return (
-        <div>
+        <div className="lg:pt-28 md:pt-16 pt-10">
             <Routes>
                 <Route path="/" element={<Homepage />} />
                 {/* <Route path="/services" element={} />
