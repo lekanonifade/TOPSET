@@ -43,12 +43,12 @@ export default function ThirdHomepage() {
 
     return (
         <div className='flex flex-col gap-10 lg:px-16 md:px-8 px-5'>
-            <p className='text-center font-bold text-4xl'>OUR SERVICES</p>
+            <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl'>OUR SERVICES</p>
             <div className='flex md:flex-row flex-col gap-10'>
                 {myThirdHomepage}
             </div>
             <div className='text-center'>
-                <a href="" className='text-white font-bold bg-[#C24278] py-3 px-4 rounded-3xl text-xl'>LEARN MORE</a>
+                <a href="" className='text-white text-xs lg:text-xl font-bold bg-[#C24278] rounded-3xl px-6 py-3'>LEARN MORE</a>
             </div>
         </div>
     );
