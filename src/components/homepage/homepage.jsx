@@ -1,7 +1,7 @@
 import React from "react";
-import FirstHomepage from "./1homepage/1homepage";
-import SecondHomepage from "./2homepage/2homepage";
-import ThirdHomepage from "./3homepage/3homepage";
+import FirstHomepage from "./1homepage";
+import SecondHomepage from "./2homepage";
+import ThirdHomepage from "./3homepage";
 
 export default function Homepage() {
     return (
