@@ -2,12 +2,11 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 
 export default function FirstHomepage() {
-    // Define an animation configuration for the left side element
     const leftSideAnimation = useSpring({
         from: { transform: "translateX(-100%) translateY(100%)" },
         to: { transform: "translateX(0%) translateY(0%)" },
         config: {
-            duration: 1000, // You can adjust the duration as needed
+            duration: 1000,
         },
     });
 
