@@ -10,7 +10,7 @@ import EighthHomepage from "./8homepage";
 
 export default function Homepage() {
     return (
-        <div className="flex flex-col gap-28 pb-24">
+        <div className="flex flex-col gap-20 pb-24">
             <FirstHomepage />
             <SecondHomepage />
             <ThirdHomepage />
