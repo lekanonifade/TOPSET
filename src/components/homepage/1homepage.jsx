@@ -1,9 +1,19 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
 
 export default function FirstHomepage() {
+    // Define an animation configuration for the left side element
+    const leftSideAnimation = useSpring({
+        from: { transform: "translateX(-100%) translateY(100%)" },
+        to: { transform: "translateX(0%) translateY(0%)" },
+        config: {
+            duration: 1000, // You can adjust the duration as needed
+        },
+    });
+
     return (
         <div className="lg:px-16 md:px-8 px-5 max-h-screen min-w-screen flex flex-col md:flex-row md:items-center text-center md:gap-5 md:justify-between gap-20">
-            <div className="flex flex-col gap-10 md:text-left text-[#2F1A60]">
+            <animated.div style={leftSideAnimation} className="flex flex-col gap-10 md:text-left text-[#2F1A60]">
                 <p className="lg:text-6xl md:text-4xl text-3xl md:text-[4vw] font-bold">
                     Expert Tutors.<br />
                     Proven methods.<br />
@@ -17,10 +27,10 @@ export default function FirstHomepage() {
                         BOOK A LESSON
                     </a>
                 </div>
-            </div>
+            </animated.div>
             <div className="">
                 <img src="../images/intro.svg" className="lg:w-[35vw] md:w-[45vw] w-80 mx-auto my-auto" alt="intro" />
             </div>
         </div>
-    )
+    );
 }
