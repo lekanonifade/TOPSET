@@ -1,4 +1,6 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useSpring, animated } from 'react-spring';
 
 const sixthHomepageData = [
     {
@@ -26,7 +28,7 @@ function SixthHomepageProps(props) {
     const titleStyle = {
         color: props.color
     };
-    
+
     return (
         <div className='flex flex-row gap-5 bg-white p-5'>
             <div>
@@ -42,6 +44,20 @@ function SixthHomepageProps(props) {
 }
 
 export default function SixthHomepage() {
+
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    const servicesAnimation = useSpring({
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'translateY(0)' : 'translateY(20px)',
+        config: {
+            delay: inView ? 0 : 1500,
+        },
+    });
+
     const mySixthHomepage = sixthHomepageData.map(item => (
         <div key={item.title} className="">
             <SixthHomepageProps
@@ -56,7 +72,13 @@ export default function SixthHomepage() {
     return (
         <div className='flex flex-col gap-10 lg:px-16 md:px-8 px-5'>
             <div className='flex flex-col gap-5'>
-                <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl'>THE TOPSET TREATMENT</p>
+                <animated.p
+                    ref={ref}
+                    className='text-center font-bold lg:text-4xl md:text-2xl text-xl'
+                    style={servicesAnimation}
+                >
+                    THE TOPSET TREATMENT
+                </animated.p>
                 <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl text-[#957FBE]'>Why We’re Different</p>
             </div>
             <div className='flex flex-row md:gap-10'>

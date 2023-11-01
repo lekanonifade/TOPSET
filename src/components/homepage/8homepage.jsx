@@ -1,4 +1,6 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useSpring, animated } from 'react-spring';
 
 const eighthHomepageData = [
     {
@@ -32,6 +34,20 @@ function EighthHomepageProps({ image, note }) {
 }
 
 export default function EighthHomepage() {
+
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    const servicesAnimation = useSpring({
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'translateY(0)' : 'translateY(20px)',
+        config: {
+            delay: inView ? 0 : 1500,
+        },
+    });
+
     const myEighthHomepage = eighthHomepageData.map((item, index) => (
         <div key={item.note}>
             <EighthHomepageProps
@@ -43,7 +59,13 @@ export default function EighthHomepage() {
 
     return (
         <div className='flex flex-col gap-10 lg:px-16 md:px-8 px-5'>
-            <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl'>TESTIMONIALS</p>
+            <animated.p
+                ref={ref}
+                className='text-center font-bold lg:text-4xl md:text-2xl text-xl'
+                style={servicesAnimation}
+            >
+                TESTIMONIALS
+            </animated.p>
             <div className='flex flex-row lg:gap-20 md:gap-10 overflow-x-auto hide-scroll'>
                 {myEighthHomepage}
             </div>

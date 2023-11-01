@@ -1,4 +1,6 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import { useSpring, animated } from 'react-spring';
 
 const thirdHomepageData = [
     {
@@ -31,6 +33,21 @@ function ThirdHomepageProps(props) {
 }
 
 export default function ThirdHomepage() {
+
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    const servicesAnimation = useSpring({
+        opacity: inView ? 1 : 0,
+        transform: inView ? 'translateY(0)' : 'translateY(20px)',
+        config: {
+            delay: inView ? 0 : 1500,
+        },
+    });
+
+
     const myThirdHomepage = thirdHomepageData.map(item => (
         <div key={item.title} className="">
             <ThirdHomepageProps
@@ -43,7 +60,13 @@ export default function ThirdHomepage() {
 
     return (
         <div className='flex flex-col gap-10 lg:px-16 md:px-8 px-5'>
-            <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl'>OUR SERVICES</p>
+            <animated.p
+                ref={ref}
+                className='text-center font-bold lg:text-4xl md:text-2xl text-xl'
+                style={servicesAnimation}
+            >
+                OUR SERVICES
+            </animated.p>
             <div className='flex md:flex-row flex-col gap-10'>
                 {myThirdHomepage}
             </div>

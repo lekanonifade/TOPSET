@@ -3,8 +3,8 @@ import { useSpring, animated } from "react-spring";
 
 export default function FirstHomepage() {
     const leftSideAnimation = useSpring({
-        from: { transform: "translateX(-100%) translateY(100%)" },
-        to: { transform: "translateX(0%) translateY(0%)" },
+        from: { transform: "translateX(-100%)" },
+        to: { transform: "translateX(0%)" },
         config: {
             duration: 1000,
         },
