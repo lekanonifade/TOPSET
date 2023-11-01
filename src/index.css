@@ -20,14 +20,3 @@
   width: 0;
   height: 0;
 }
-
-.progress-bar {
-  width: 90px;
-  font-size: 1px; /* Adjust the font size as needed */
-}
-
-.circular-progress-bars {
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-}
