@@ -1,9 +1,13 @@
 import React from "react";
 
-export default function Footer() {
-    return (
-        <div className="bg-[#957FBE80] h-32 p-10">
-            <p className="text-center font-bold text-white text-2xl">BACKED BY</p>
-        </div>
-    )
-}
+const Footer = () => {
+  return (
+    <footer className="bg-[#957FBE80] text-white font-bold py-4 text-center">
+      <div className="container mx-auto">
+        <p>&copy; {new Date().getFullYear()} Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
