@@ -19,12 +19,12 @@ const eighthHomepageData = [
 
 function EighthHomepageProps({ image, note }) {
     return (
-        <div className='flex flex-col items-center gap-10 p-5 lg:w-96 md:w-80 w-72'> {/* Center both the image and the text */}
-            <div className="flex justify-center"> {/* Center the image horizontally */}
+        <div className='flex flex-col items-center gap-10 p-5 lg:w-96 md:w-80 w-72'> 
+            <div className="flex justify-center"> 
                 <img src={image} alt="" className='rounded-full' />
             </div>
-            <p className='lg:text-lg md:text-base text-sm text-center h-20'>{note}</p> {/* Center the text horizontally */}
-            <div className='flex flex-row justify-center w-10'> {/* Center the stars horizontally */}
+            <p className='lg:text-lg md:text-base text-sm text-center h-20'>{note}</p> 
+            <div className='flex flex-row justify-center w-10'>
                 {Array(5).fill(null).map((_, index) => (
                     <img key={index} src="../images/star.svg" alt="star" />
                 ))}
