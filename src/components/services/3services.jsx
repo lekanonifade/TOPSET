@@ -59,7 +59,7 @@ export default function ThirdServices() {
             <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl text-[#2F1A60]'>
                 TUTORING FOR ALL GRADE LEVELS
             </p>
-            <div className='flex flex-row lg:gap-20 md:gap-10 gap-10 overflow-x-auto hide-scroll py-10'>
+            <div className='flex flex-row lg:gap-20 md:gap-10 gap-10 overflow-x-auto hide-scroll px-3 py-10'>
                 {myThirdServices}
             </div>
             <div className='text-center'>
