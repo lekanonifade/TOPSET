@@ -63,7 +63,7 @@ function SecondServicesProps(props) {
 
     return (
         <div className="bg-no-repeat" style={divStyle}>
-            <p className='text-xs'>{props.title}</p>
+            <p className='text-xs text-[#2F1A60] font-bold flex-wrap'>{props.title}</p>
         </div>
     );
 }
@@ -85,7 +85,7 @@ export default function SecondServices() {
                 <p className='text-[#957EBE] lg:text-lg md:text-base text-sm'>Our team of experienced, passionate, and qualified tutors from well-known schools such as Harvard University, backed by big companies like Google For Startups, use innovative teaching methods to engage students, making learning more enjoyable and impactful. By offering personalized attention and adapting our teaching style to suit individual learning preferences, we ensure that students grasp complex concepts with ease and develop a deep understanding of the subject matter.</p>
             </div>
             <div className='grid lg:grid-cols-6 md:grid-cols-4 grid-cols-3 gap-10'>
-                {mySecondServices}
+                {/* {mySecondServices} */}
             </div>
         </div>
     );
