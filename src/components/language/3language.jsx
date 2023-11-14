@@ -44,8 +44,11 @@ export default function ThirdLanguage() {
             <div className='flex flex-col md:gap-5 gap-10 md:flex-row'>
                 {myThirdLanguage}
             </div>
+            <div className='self-center'>
+                <img src="../images/language-step.svg" alt="" className='w-56' />
+            </div>
             <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm'>
-                By teaching Yoruba, Hausa, and Igbo, we aim to foster cultural appreciation and understanding among our students, enriching their lives and strengthening the bonds that unite Nigeria's diverse communities.
+                Our expert tutors provide a supportive and engaging environment where students can feel at ease, making learning enjoyable and efficient. Whether you are just starting your language journey or looking to perfect your skills, our tailored lessons will guide you every step of the way, ensuring success and a lasting connection to the languages and cultures of Nigeria.
             </p>
         </div>
     )
