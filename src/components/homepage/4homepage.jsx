@@ -13,7 +13,7 @@ export default function FourthHomepage() {
                 </div>
             </div>
             <div className='text-center'>
-                <a href="" className='text-white text-xs lg:text-xl font-bold bg-[#C24278] rounded-3xl px-6 py-3'>GET STARTED</a>
+                <a href="/book-a-lesson" className='text-white text-xs lg:text-xl font-bold bg-[#C24278] rounded-lg px-6 py-3'>GET STARTED</a>
             </div>
         </div>
     );

@@ -71,7 +71,7 @@ export default function ThirdHomepage() {
                 {myThirdHomepage}
             </div>
             <div className='text-center'>
-                <a href="" className='text-white text-xs lg:text-xl font-bold bg-[#C24278] rounded-3xl px-6 py-3'>LEARN MORE</a>
+                <a href="/services" className='text-white text-xs lg:text-xl font-bold bg-[#C24278] rounded-lg px-6 py-3'>LEARN MORE</a>
             </div>
         </div>
     );

@@ -85,7 +85,7 @@ export default function SixthHomepage() {
                 <div className='flex flex-col gap-10 py-5 w-[30%]'>
                     <img src="../images/homepageTreatment/ellipse3.svg" alt="" className='rounded-full' />
                     <div className='text-center'>
-                        <a href="" className='text-white text-xs lg:text-xl font-bold bg-[#C24278] rounded-3xl md:px-6 md:py-3 px-2 py-2'>LEARN MORE</a>
+                        <a href="" className='text-white text-xs lg:text-xl font-bold bg-[#C24278] rounded-lg md:px-6 md:py-3 px-2 py-2'>LEARN MORE</a>
                     </div>
                 </div>
                 <div className='flex md:flex-col flex-col w-[70%]'>

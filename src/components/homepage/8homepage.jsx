@@ -70,7 +70,7 @@ export default function EighthHomepage() {
                 {myEighthHomepage}
             </div>
             <div className='text-center'>
-                <a href="#" className='text-white text-xs lg:text-xl font-bold bg-[#C24278] rounded-3xl px-6 py-3'>BOOK A LESSON</a>
+                <a href="#" className='text-white text-xs lg:text-xl font-bold bg-[#C24278] rounded-lg px-6 py-3'>BOOK A LESSON</a>
             </div>
         </div>
     );
