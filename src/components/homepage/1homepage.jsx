@@ -22,7 +22,7 @@ export default function FirstHomepage() {
                     The #1 choice in online tutoring for students of all ages.
                 </p>
                 <div>
-                    <a href="" className="text-white text-xs lg:text-xl font-bold bg-[#C24278] rounded-lg px-6 py-3">
+                    <a href="/book-a-lesson" className="text-white text-xs lg:text-xl font-bold bg-[#C24278] rounded-lg px-6 py-3">
                         BOOK A LESSON
                     </a>
                 </div>
