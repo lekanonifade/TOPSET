@@ -11,7 +11,7 @@ export default function FirstLanguage() {
     });
 
     return (
-        <div className="lg:px-16 md:px-8 px-5 min-h-screen min-w-screen flex flex-col md:flex-row md:items-center text-center md:gap-5 md:justify-between gap-20">
+        <div className="lg:px-16 md:px-8 px-5 min-w-screen flex flex-col md:flex-row md:items-center text-center md:gap-5 md:justify-between gap-20">
             <animated.div style={leftSideAnimation} className="flex flex-col gap-10 md:text-left text-[#2F1A60] md:w-1/2">
                 <p className="text-4xl font-bold">Language</p>
                 <p className="text-[#C24278] text-2xl">Achieving fluency for diverse language learners</p>

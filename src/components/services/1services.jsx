@@ -11,7 +11,7 @@ export default function FirstServices() {
     });
 
     return (
-        <div className="lg:px-16 md:px-8 px-5 max-h-screen min-w-screen flex flex-col md:flex-row md:items-center text-center md:gap-5 md:justify-between gap-20">
+        <div className="lg:px-16 md:px-8 px-5 min-w-screen flex flex-col md:flex-row md:items-center text-center md:gap-5 md:justify-between gap-20">
             <animated.div style={leftSideAnimation} className="flex flex-col gap-10 md:text-left text-[#2F1A60] md:w-1/2">
                 <p className="lg:text-5xl md:text-4xl text-3xl md:text-[4vw] font-bold">
                     Services
