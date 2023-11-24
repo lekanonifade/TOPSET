@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function FirstAbout() {
     return (
-        <div className='flex flex-col gap-10 lg:px-16 md:px-8 px-5'>
+        <div className='flex flex-col gap-10 lg:px-16 md:px-8 px-5 mb-20 md:mb-28'>
             <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl text-[#2F1A60]'>
                 MISSION
             </p>
-            <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm'>
+            <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm text-[#C24278] font-semibold'>
                 Mission Driven Tutoring
             </p>
             <div>
