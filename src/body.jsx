@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Homepage from "./components/homepage/homepage";
 import Services from "./components/services/services";
 import Language from "./components/language/language";
+import About from "./components/about/about";
 
 export default function Body() {
     return (
@@ -11,9 +12,9 @@ export default function Body() {
                 <Route path="/" element={<Homepage />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/language" element={<Language />} />
-                {/* <Route path="/book-a-lesson" element={} />
-                <Route path="/about" element={} />
-                <Route path="/contact" element={} /> */}
+                {/* <Route path="/book-a-lesson" element={} /> */}
+                <Route path="/about" element={<About />} />
+                {/* <Route path="/contact" element={} /> */}
             </Routes>
         </div>
     )
