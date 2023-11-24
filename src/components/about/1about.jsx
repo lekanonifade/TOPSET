@@ -12,7 +12,7 @@ export default function FirstAbout() {
             <div>
                 <img src="../images/about/about-mission.png" alt="" />
             </div>
-            <p>
+            <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm'>
                 TopSet's mission is to deliver comprehensive, culturally-aware tutoring that empowers Nigerian students of all grades and subjects, unlocking their full potential. We understand Nigeria's unique educational needs and cultural context, enabling us to effectively address students' requirements.
                 <br /><br />
                 Our passionate team of experienced tutors, with backgrounds from prestigious institutions like Harvard University and support from Google for Startups, employs innovative teaching methods to make learning enjoyable and impactful. We provide personalized attention and adapt our teaching style to suit each student's learning preferences, ensuring they easily grasp complex concepts and develop a deep understanding of the subject matter.

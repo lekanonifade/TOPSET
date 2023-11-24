@@ -19,7 +19,7 @@ const MarqueeComponent = () => {
             key={index}
             src={url}
             alt={`Image ${index + 1}`}
-            className='w-40 mr-20' // Add margin-right to create a gap between images
+            className='w-40 mr-10 md:mr-20' // Add margin-right to create a gap between images
           />
         ))}
       </Marquee>

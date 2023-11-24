@@ -26,7 +26,7 @@ export default function FourthLanguage() {
                     <img src="../images/language-benefits.svg" alt="" className='w-72 md:w-full' />
                 </div>
                 <div className='flex md:flex-col flex-col gap-10 md:w-[70%] text-center md:text-left'>
-                    <p>
+                    <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm'>
                         At TopSet we recognize the immense benefits of online language learning and strive to create an experience that closely resembles immersive language learning. While apps and tools can be helpful, nothing compares to the personal interaction and real-time feedback provided by native speakers during online tutoring sessions.
                         <br /><br />
                         Our platform connects you with experienced tutors who are native speakers of Yoruba, Hausa, and Igbo. Through engaging conversations and tailored lessons, you will receive invaluable insights into the nuances of the language, cultural context, and practical usage. This personalized approach accelerates your progress, helping you achieve fluency and confidence in a fraction of the time compared to traditional self-study methods.

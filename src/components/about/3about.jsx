@@ -8,7 +8,7 @@ export default function ThirdAbout() {
             </p>
             <div className='flex flex-col gap-10 md:flex-row md:gap-10'>
                 <div className='flex md:flex-col flex-col gap-10 md:w-[60%] text-center md:text-left'>
-                    <p>
+                    <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm'>
                         TopSet envisions a future where quality education is accessible to every Nigerian student, regardless of their location or socioeconomic background. We aim to revolutionize the learning experience by offering personalized, engaging, and culturally-aware tutoring in all subjects and grades, including Nigerian languages.
                         <br /><br />
                         Our vision is to bridge the educational gap and create equal opportunities for students across Nigeria, empowering them with the knowledge and skills needed to thrive in a rapidly evolving world. By leveraging innovative teaching methods and harnessing the power of technology, we strive to make learning more enjoyable, efficient, and effective.
