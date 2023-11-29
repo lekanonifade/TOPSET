@@ -1,4 +1,6 @@
-import React from 'react'
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import React, { useEffect } from 'react'
 
 const secondLanguageData = [
     {
@@ -45,9 +47,18 @@ export default function SecondLanguage() {
         </div>
     ));
 
+    useEffect(() => {
+        Aos.init({
+          duration: 1000,
+          delay: 200,
+          once: false,
+        });
+        Aos.refresh();
+      }, []);
+
     return (
         <div className='flex flex-col gap-10 lg:px-16 md:px-8 px-5'>
-            <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl text-[#2F1A60]'>
+            <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl text-[#2F1A60]' data-aos="zoom-in">
                 LANGUAGES WE TEACH
             </p>
             <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm'>
