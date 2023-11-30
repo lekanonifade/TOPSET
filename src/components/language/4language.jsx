@@ -18,7 +18,7 @@ import React from 'react';
 export default function FourthLanguage() {
     return (
         <div className='flex flex-col gap-10 lg:px-16 md:px-8 px-5 bg-[#F8F5FC] py-16 pb-24'>
-            <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl text-[#2F1A60]'>
+            <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl text-[#2F1A60]' data-aos="zoom-in">
                 BENEFITS
             </p>
             <div className='flex flex-col gap-5 md:flex-row md:gap-10'>
