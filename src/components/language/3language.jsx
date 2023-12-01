@@ -49,16 +49,16 @@ export default function ThirdLanguage() {
             <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl text-[#2F1A60]' data-aos="zoom-in">
                 BEGINNER TO ADVANCED
             </p>
-            <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm'>
+            <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm' data-aos="zoom-out">
                 TopSet is designed to accommodate learners at every stage of their language journey, from complete beginners to advanced speakers. We understand that each student has unique needs and goals, and we tailor our lessons accordingly to ensure a personalized learning experience.
             </p>
             <div className='flex flex-col md:gap-5 gap-10 md:flex-row' data-aos="zoom-in-up">
                 {myThirdLanguage}
             </div>
-            <div className='self-center'>
+            <div className='self-center' data-aos="fade-up">
                 <img src="../images/language-step.svg" alt="" className='w-56' />
             </div>
-            <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm'>
+            <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm' data-aos="zoom-out">
                 Our expert tutors provide a supportive and engaging environment where students can feel at ease, making learning enjoyable and efficient. Whether you are just starting your language journey or looking to perfect your skills, our tailored lessons will guide you every step of the way, ensuring success and a lasting connection to the languages and cultures of Nigeria.
             </p>
         </div>

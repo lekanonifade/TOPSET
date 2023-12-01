@@ -61,13 +61,13 @@ export default function SecondLanguage() {
             <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl text-[#2F1A60]' data-aos="zoom-in">
                 LANGUAGES WE TEACH
             </p>
-            <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm'>
+            <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm' data-aos="zoom-out">
                 At our TopSet, we are proud to offer courses in Yoruba, Hausa, and Igbo, three distinct and vibrant languages representing the rich diversity of Nigeria's cultural landscape.
             </p>
-            <div className='flex flex-col md:gap-5 gap-10 md:flex-row'>
+            <div className='flex flex-col md:gap-5 gap-10 md:flex-row' data-aos="zoom-in">
                 {mySecondLanguage}
             </div>
-            <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm'>
+            <p className='text-center lg:px-32 md:px-24 px-16 lg:text-lg md:text-base text-sm' data-aos="zoom-out">
                 By teaching Yoruba, Hausa, and Igbo, we aim to foster cultural appreciation and understanding among our students, enriching their lives and strengthening the bonds that unite Nigeria's diverse communities.
             </p>
         </div>
