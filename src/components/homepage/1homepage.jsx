@@ -27,7 +27,7 @@ export default function FirstHomepage() {
                     </a>
                 </div>
             </animated.div>
-            <div className="">
+            <div className="" data-aos="flip-right">
                 <img src="../images/intro.svg" className="lg:w-[35vw] md:w-[45vw] w-80 mx-auto my-auto" alt="intro" />
             </div>
         </div>

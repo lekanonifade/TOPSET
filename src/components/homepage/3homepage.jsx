@@ -60,14 +60,20 @@ export default function ThirdHomepage() {
 
     return (
         <div className='flex flex-col gap-10 lg:px-16 md:px-8 px-5'>
-            <animated.p
+            {/* <animated.p
                 ref={ref}
                 className='text-center font-bold lg:text-4xl md:text-2xl text-xl'
                 style={servicesAnimation}
             >
                 OUR SERVICES
-            </animated.p>
-            <div className='flex md:flex-row flex-col gap-10'>
+            </animated.p> */}
+            <p
+                className='text-center font-bold lg:text-4xl md:text-2xl text-xl'
+                data-aos="fade-up"
+            >
+                OUR SERVICES
+            </p>
+            <div className='flex md:flex-row flex-col gap-10' data-aos="flip-up">
                 {myThirdHomepage}
             </div>
             <div className='text-center'>

@@ -59,13 +59,19 @@ export default function EighthHomepage() {
 
     return (
         <div className='flex flex-col gap-10 lg:px-16 md:px-8 px-5'>
-            <animated.p
+            {/* <animated.p
                 ref={ref}
                 className='text-center font-bold lg:text-4xl md:text-2xl text-xl'
                 style={servicesAnimation}
             >
                 TESTIMONIALS
-            </animated.p>
+            </animated.p> */}
+            <p
+                className='text-center font-bold lg:text-4xl md:text-2xl text-xl'
+                data-aos="fade-up"
+            >
+                TESTIMONIALS
+            </p>
             <div className='flex flex-row lg:gap-20 md:gap-10 overflow-x-auto hide-scroll'>
                 {myEighthHomepage}
             </div>

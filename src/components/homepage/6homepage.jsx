@@ -72,13 +72,19 @@ export default function SixthHomepage() {
     return (
         <div className='flex flex-col gap-10 lg:px-16 md:px-8 px-5'>
             <div className='flex flex-col gap-5'>
-                <animated.p
+                {/* <animated.p
                     ref={ref}
                     className='text-center font-bold lg:text-4xl md:text-2xl text-xl'
                     style={servicesAnimation}
                 >
                     THE TOPSET TREATMENT
-                </animated.p>
+                </animated.p> */}
+                <p
+                    className='text-center font-bold lg:text-4xl md:text-2xl text-xl'
+                    data-aos="fade-up"
+                >
+                    THE TOPSET TREATMENT
+                </p>
                 <p className='text-center font-bold lg:text-4xl md:text-2xl text-xl text-[#957FBE]'>Why We’re Different</p>
             </div>
             <div className='flex flex-row md:gap-10'>
