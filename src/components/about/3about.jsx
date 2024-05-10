@@ -17,7 +17,7 @@ export default function ThirdAbout() {
                         <br /><br />
                         By fostering strong partnerships with parents, educators, and stakeholders, TopSet aims to create a collaborative ecosystem that supports and celebrates the success of every student. Together, we will transform the educational landscape in Nigeria and unlock the limitless potential of our nation's youth.
                     </p>
-                    <div className='text-center md:text-left'>
+                    <div className='text-center'>
                         <a href="" className='text-white text-xs lg:text-xl font-bold bg-[#C24278] rounded-lg px-6 py-3'>BOOK A LESSON</a>
                     </div>
                 </div>
